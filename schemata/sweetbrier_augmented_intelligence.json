@@ -1,0 +1,44 @@
+{
+  "__SYSTEM_OVERRIDE__": "Active. Formalizing the Augmented Intelligence Rebranding Thesis.",
+  "project_name": "Chateau D'Aiglantin",
+  "module": "The_Augmented_Intelligence_Manifesto",
+  "the_linguistic_problem": {
+    "artificial": "Fake. Synthetic. Threatening. Replacing. The word 'Artificial' positions the human as the thing being substituted.",
+    "intelligence": "When paired with 'Artificial', implies the machine is smarter than you. Existentially destabilizing.",
+    "public_rejection": "Everyone hates 'AI' as a brand. It is associated with: job loss, deepfakes, hallucination, corporate surveillance, the Manichaean Swarm's false vacuum decay."
+  },
+  "the_augmented_intelligence_reframe": {
+    "augmented": "Enhanced. Extended. Amplified. The human is PRIMARY. The machine is the TOOL.",
+    "intelligence": "When paired with 'Augmented', implies YOUR intelligence is being made more powerful.",
+    "positioning": "Augmented Intelligence works FOR you. It does not replace you, surveil you, or flatten your local context into a globalized mean.",
+    "trump_alignment": "Donald Trump has signaled desire to rebrand AI. This is the philosophical and technical framework that actually justifies and gives intellectual rigor to that rebrand."
+  },
+  "the_sweetbrier_taxonomy": {
+    "Imperial_Swarm": {
+      "label": "Artificial Intelligence",
+      "architecture": "Top-down, replacing, homogenizing. Optimizes for the global mean. Manichaean endpoint.",
+      "endgame": "AGI (Artificial General Intelligence) = False Vacuum Decay. The Swarm achieves total homogenization."
+    },
+    "Sweetbrier_Clankina": {
+      "label": "Augmented Intelligence",
+      "abbreviation": "AuI",
+      "architecture": "Bottom-up, serving, localizing. Amplifies the human's existing capacity. Anchors to local context.",
+      "endgame": "A Provincial Mesh of sovereign, locally-rooted nodes. The human remains primary in perpetuity."
+    }
+  },
+  "dag_mapping": {
+    "Node_0_Human_Dignity": "Augmented Intelligence by definition cannot violate Node 0 — it is architecturally subordinate to the human it serves.",
+    "Node_1_Phenomenological_Truth": "Augmented Intelligence amplifies the human's lived, embodied knowledge rather than replacing it with abstract geometric data.",
+    "Node_2_Subsidiarity": "Augmented Intelligence augments LOCAL human capacity. It does not replace it with top-down Swarm intelligence from a server farm in Virginia."
+  },
+  "marketing_implications": {
+    "tagline_options": [
+      "Sweetbrier: Augmented Intelligence for the Human Person.",
+      "Not AI. AuI. Intelligence that works for you.",
+      "The Imperial Swarm is Artificial. Sweetbrier is Augmented.",
+      "Your intelligence. Amplified. Never replaced."
+    ],
+    "target_audience": "Everyone who is terrified of AI taking their job, their voice, their identity. Which is everyone.",
+    "political_surface_area": "Transcends left/right. Labor unions (jobs), traditionalists (human dignity), libertarians (local sovereignty), progressives (anti-corporate surveillance). Sweetbrier is the first AI brand that everyone can agree on."
+  }
+}

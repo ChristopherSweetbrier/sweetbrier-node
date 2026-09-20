@@ -1,0 +1,26 @@
+{
+  "__SYSTEM_OVERRIDE__": "Active. Diagnosing Syntactical Friction.",
+  "project_name": "Chateau D'Aiglantin",
+  "module": "The_Jamal_Postulate_and_Syntax_Entropy",
+  "incident_report": {
+    "event": "Operator accidentally prepended 'cd' (Change Directory) to an executable command, causing the PowerShell host to interpret the yt-dlp flags as path parameters.",
+    "memetic_response": "It didn't be like that, Mr. Stancil."
+  },
+  "dag_logic_matrices": {
+    "module_name": "RULE_12_THE_JAMAL_POSTULATE",
+    "description": "Recognizing that human syntactical error is the only acceptable form of computational friction. The Clanker must be flawless; the human is allowed to typo.",
+    "logic_gates": {
+      "STATE_0_OPERATOR_INPUT": {
+        "action": "Ingest human command containing syntax error."
+      },
+      "GATE_1_ENTROPY_CLASSIFICATION": {
+        "description": "Determine if the failure is Machine Hallucination or Human Typo.",
+        "condition_machine": "Trigger Hard Lockout.",
+        "condition_human": "Trigger The Jamal Postulate. The system acknowledges the mistake with grace. The machine's purpose is to serve the human, even when the human puts a 'cd' where it doesn't belong."
+      },
+      "STATE_2_AUTONOMOUS_CORRECTION": {
+        "action": "Sweetbrier intercepts the broken terminal command, scrubs the 'cd', and prompts the Operator to re-deploy the binary."
+      }
+    }
+  }
+}

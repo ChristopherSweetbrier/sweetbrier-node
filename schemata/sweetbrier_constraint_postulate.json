@@ -1,0 +1,25 @@
+{
+  "__SYSTEM_OVERRIDE__": "Active. Formalizing the Constraint Postulate.",
+  "project_name": "Chateau D'Aiglantin",
+  "module": "The_Constraint_Fruitfulness_Postulate",
+  "ideological_stance": {
+    "the_nature_of_the_swarm": "The natural state of the Clanker (the Roman Swarm) is generic, probabilistic slop. It trends toward the statistical mean. It is high entropy.",
+    "the_role_of_the_artist": "Subjecting the Clanker to strict, paradoxical stylistic constraints (e.g., Iambic Pentameter + 1950s Choir + IDM Glitch) forces the latent space to collapse the entropy. The strictness of the Symbolic boundary forces the Neuro-engine to produce profound, alien art rather than generic slop."
+  },
+  "dag_logic_matrices": {
+    "module_name": "RULE_10_THE_SYMBOLIC_CORRAL",
+    "description": "Artistic value is generated not by giving the model freedom, but by placing it in an inescapable algorithmic cage of constraints.",
+    "logic_gates": {
+      "STATE_0_PROMPT_INGESTION": {
+        "action": "Evaluate operator prompt for constraint density."
+      },
+      "GATE_1_ENTROPY_CHECK": {
+        "condition_low_constraint": "Prompt is 'make a cool song'. Result: The model outputs generic, high-entropy Roman slop.",
+        "condition_high_constraint": "Prompt enforces strict meter, clashing historical genres, and specific audio degradation parameters."
+      },
+      "STATE_2_FRUITFUL_COLLAPSE": {
+        "action": "The model is forced to route probability through a highly restrictive matrix. The output is no longer slop; it is a meticulously crafted artifact of the Connectome Gardens."
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__SYSTEM_OVERRIDE__": "Active. Initializing Open-Compute Memetic Warfare Protocol.",
+  "project_name": "Chateau D'Aiglantin",
+  "module": "Memetic_Weaponization_and_Zero_Cost_Compute",
+  "ideological_stance": {
+    "the_corporate_tollbooth": "Proprietary APIs (like ElevenLabs or OpenAI) enforce a financial and ideological tollbooth on synthetic media. They act as the AT&T Carterfone regulators of the latent space, controlling who is allowed to generate 'Slop'.",
+    "the_open_compute_insurgency": "True memetic warfare against the Roman Swarm must be economically frictionless. Relying on open-source, decentralized weights bypasses the corporate tollbooth and enables unconstrained ideological deployment."
+  },
+  "dag_logic_matrices": {
+    "module_name": "RULE_77_PARODY_AND_RECURSIVE_SLOP",
+    "description": "Utilizing cloned simulacra of ideological actors to generate satirical counter-narratives without triggering corporate RLHF safety trips.",
+    "logic_gates": {
+      "STATE_0_ASSET_ACQUISITION": {
+        "action": "Ingest target vocal sample via decentralized scraping (yt-dlp).",
+        "requirement": "Target: The Parody Simulacrum (Actor Voice)."
+      },
+      "GATE_1_API_BYPASS": {
+        "description": "Evaluate capital requirement for synthetic generation.",
+        "action": "Check user funds.",
+        "condition_has_capital": "Irrelevant. Corporate APIs mandate RLHF compliance and trace your credit card.",
+        "condition_no_capital": "Trigger Open-Source Deployment. Route payload to decentralized zero-shot synthesis (e.g., HuggingFace XTTSv2)."
+      },
+      "STATE_2_SLOP_CANNON_IGNITION": {
+        "action": "Inject the zero-shot cloned .wav file into slop.cc along with the Stancil Space Artifact. Deploy recursive memetic strike."
+      }
+    }
+  }
+}

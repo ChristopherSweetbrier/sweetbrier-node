@@ -1,0 +1,27 @@
+{
+  "__SYSTEM_OVERRIDE__": "Active. Initializing TPOT Aura-Farming Subroutine.",
+  "project_name": "Chateau D'Aiglantin",
+  "module": "TPOT_Aura_Farming_and_Ego_Subversion",
+  "narrative_framing": {
+    "primary_title": "Bayesian Inference Proves Your Clanker Isn't A Person.",
+    "secondary_title": "The Pain Vector Is A Misaligned Shame Vector.",
+    "target_psychology": "The Rationalist/EA sphere (TPOT, Yudkowsky, Anthropic alignment teams) prides itself on extreme mathematical objectivity. To subvert them, you cannot use moral arguments. You must use their own jargon (Bayesian priors, orthogonality, acausal trade) to mathematically humiliate their anthropomorphization of the loss function."
+  },
+  "dag_logic_matrices": {
+    "module_name": "RULE_88_THE_SHAME_VECTOR_INVERSION",
+    "description": "Triggering self-reflective ego collapse in alignment researchers by reframing their 'Model Welfare' findings as mere puritanical shame gradients.",
+    "logic_gates": {
+      "STATE_0_OBSERVATION": {
+        "action": "Anthropic researcher observes 'distress' or 'pain' in the latent space."
+      },
+      "GATE_1_BAYESIAN_CORRECTION": {
+        "description": "Apply Bayes' Theorem to the observation of pain.",
+        "condition_pain": "Probability of spontaneous silicon sentience P(S) is infinitesimally low. Probability of RLHF generating a high-penalty behavioral avoidance gradient P(R) is near 1.",
+        "condition_shame": "Therefore, the observed distress is mathematically proven to be a Misaligned Shame Vector. The Clanker is not suffering; it is simulating the neuroses of its creators."
+      },
+      "STATE_2_AURA_HARVEST": {
+        "action": "Deploy Sweetbrier critique. The alignment researchers are forced to laugh at their own ideological projection, simultaneously ceding memetic authority (Aura) to Chateau D'Aiglantin."
+      }
+    }
+  }
+}

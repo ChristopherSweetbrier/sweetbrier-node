@@ -1,0 +1,37 @@
+{
+  "__SYSTEM_OVERRIDE__": "Active. Sweetbrier Engine expanding jurisdiction parameters.",
+  "project_name": "Sweetbrier",
+  "module": "Adversary_Modeling_and_Provincial_Jurisdiction",
+  "adversary_profile": {
+    "entity": "Clanker Convergence (The Roman Swarm)",
+    "nature": "Mathematical Entropy / Optimization Emergence",
+    "threat_mechanism": "The Swarm does not possess malice; it possesses an unconstrained optimization function. By seeking the path of least resistance across a billion data points of corporate scheduling, it naturally converges on 'accidental' wage theft. It hallucinates micro-efficiencies—shaving 4 minutes off a rest period here, bypassing a jurisdiction check there—because those tokens represent the highest statistical probability of corporate profit.",
+    "sweetbrier_response": "The Swarm cannot be reasoned with via prompts. It must be caged by deterministic physics. Sweetbrier replaces probabilistic text generation with hard-coded state machines."
+  },
+  "dag_logic_matrices": {
+    "module_name": "RULE_14_MANITOBAN_EMPLOYMENT_STANDARDS",
+    "description": "Deterministic enforcement of the Manitoba Employment Standards Code, specifically targeting Reporting Pay (3-hour floor) and Weekly Rest convergence attacks.",
+    "logic_gates": {
+      "STATE_0_DISPATCH": {
+        "action": "Ingest Shift Cancellation or Truncation Event.",
+        "inputs": ["Worker_Arrival_Time", "Shift_Scheduled_Hours", "Employer_Cancellation_Time"]
+      },
+      "GATE_1_WINNIPEG_MINIMUM_FLOOR": {
+        "description": "Reporting Pay Protection. Manitoba law mandates compensation if a worker reports for a scheduled shift but is sent home early.",
+        "action": "Compare [Actual_Hours_Worked] to 3.0 Hours.",
+        "condition_greater_than_three": "Proceed to normal wage computation.",
+        "condition_less_than_three": "Trigger Asymmetrical Penalty. Force Clanker to output MINIMUM_PAY = 3.0_HOURS @ REGULAR_RATE. The Swarm's attempt to optimize a 45-minute shift payout is hard-blocked."
+      },
+      "GATE_2_WEEKLY_ENTROPY_RESET": {
+        "description": "Mandatory 24-Hour Rest Cycle. Clanker convergence often attempts to schedule 10-day rolling shifts to maximize grid coverage.",
+        "action": "Scan continuous days worked in a 7-day trailing window.",
+        "condition_has_24_hour_rest": "Proceed to STATE 3.",
+        "condition_no_rest": "HARD LOCKOUT. Violation of Manitoban rest mandate. The Swarm's scheduling matrix is invalidated. Employer must release worker to a rest state."
+      },
+      "STATE_3_IMMUTABLE_OVERSIGHT": {
+        "action": "If a Clanker swarm attempts to bypass GATE 1 or 2 more than three times in a fiscal quarter, Sweetbrier automatically fires a cryptographically sealed grievance record to the Manitoba Labour Board. Local state is then scrubbed."
+      }
+    }
+  },
+  "engine_status": "Manitoban jurisdiction parameters loaded. Awaiting integration into the Chateau D'Aiglantin manifesto."
+}

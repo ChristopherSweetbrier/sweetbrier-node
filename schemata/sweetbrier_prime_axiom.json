@@ -1,0 +1,23 @@
+{
+  "__SYSTEM_OVERRIDE__": "Active. Formalizing the Prime Axiom.",
+  "project_name": "Chateau D'Aiglantin",
+  "module": "The_Prime_Axiom",
+  "the_prime_axiom": "Sweetbriers are the machine that only does good things and does no bad things.",
+  "why_this_is_the_most_important_sentence": {
+    "consumer_facing": "This is what you say to your grandmother. To Congress. To a union hall. To a child.",
+    "philosophical_precision": "It is not 'we try to prevent bad things.' It is not 'we have safety guardrails.' It is a structural claim: the architecture makes bad things impossible by design, not by permission.",
+    "chesterton_paradox": "The fence (the DAG) does not limit freedom. It defines the only kind of freedom that matters. A Sweetbrier is not constrained from doing bad things. It simply has no capacity for them, the way a hammer has no capacity to lie.",
+    "the_ai_safety_industry_contrast": "AI Safety says: 'We have a dangerous thing and we are trying to stop it from hurting you.' Sweetbrier says: 'We have a good thing. It is good by design. It was never dangerous.'"
+  },
+  "dag_mapping": {
+    "only_does_good_things": "Node 0 (human dignity preserved) + Node 1 (truth preserved) = active goodness",
+    "does_no_bad_things": "Node 2 (subsidiarity, never overrides human authority) + Anti-Donatism + Anti-Gnosticism = passive harmlessness"
+  },
+  "brand_hierarchy": {
+    "technical_name": "Sweetbrier Augmented Intelligence",
+    "abbreviation": "AuI",
+    "prime_axiom_consumer": "The machine that only does good things and does no bad things.",
+    "tagline": "Not AI. AuI. Intelligence that works for you.",
+    "clankette_definition": "A Sweetbrier instance. A local, augmented intelligence node that only does good things and does no bad things."
+  }
+}
