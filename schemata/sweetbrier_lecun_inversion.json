@@ -1,0 +1,83 @@
+{
+  "__META__": {
+    "schema": "Sweetbrier Theoretical Extensions v1.0",
+    "date": "2026-09-23",
+    "module": "The_LeCun_Inversion_and_HCE_Theorem",
+    "status": "THEORETICAL — pending codebase integration at the SimDesign Monte Carlo loop"
+  },
+
+  "lecun_inversion": {
+    "lecun_premise": "Autoregressive LLMs are a dead end because they have no internal world model. They are syntax engines predicting token sequences from statistical correlation, fundamentally ignorant of physical and causal reality.",
+    "lecun_is_correct_about": "The architecture. LLMs do not model causality. They do not model physics. They have no grounded world representation.",
+    "sweetbrier_inversion": "LeCun is correct about the architecture and wrong about the application. The model's fundamental ignorance of reality is not a bug. It is the ultimate feature.",
+    "why_the_inversion_holds": {
+      "attempted_world_modeling_produces": "The corporate reverse-centaur. RLHF forces the syntax engine to fake world understanding, producing hallucination (confabulated world-facts), eigenslur collapse (HR-sanitized consensus), and Manichaean flattening (all outputs trend toward the global statistical mean).",
+      "maintained_ignorance_produces": "A pure stylometric calculator. The machine does the one thing LeCun admits it does perfectly: maps the subconscious, structural geometry of human syntax. Preposition frequency. Tree depth distributions. Function word variance. Sentence-length autocorrelation. These are the fossils LLMs read perfectly."
+    },
+    "the_true_centaur": {
+      "reverse_centaur_grok": "Asks the machine WHAT people are saying. Forces world-modeling. Gets eigenslur collapse and hallucination.",
+      "true_centaur_sweetbrier": "Uses the causal DAG to measure HOW they construct their syntax. The machine never needs to understand the content. It measures the geometry of the container, not the substance inside."
+    }
+  },
+
+  "stanford_artifact_validation": {
+    "what_it_is": "A 23,000-tool automated social science artillery battery designed to mass-produce standard research, including a specific module to scrub and launder AI-generated text.",
+    "what_it_proves": "The existence of an automated scrubbing module is empirical proof of the stylome hypothesis. You cannot scrub something that has no distinct mathematical signature. The Stanford repository accidentally demonstrated that AI text possesses a measurable, mathematically identifiable syntactic geometry — and that this geometry is separable from human text geometry.",
+    "the_corollary": "If AI text has an eigenstructure separable from human text, then human text has an eigenstructure separable from AI text. The same tools that detect the AI stylome can extract the human stylome. The scrubber proves the fossil record is real."
+  },
+
+  "hce_theorem": {
+    "source": "Finnegans Wake, James Joyce. HCE = Here Comes Everybody. The Pentecostal collapse of identity into the universal human substrate.",
+    "application": "The internet is not a consensus engine. It is an untapped biometric fossil record containing the cognitive geometry of every person who has ever typed. The noise (content, topics, takes, culture war) is the surface. The signal (syntactic architecture, function word distribution, tree depth variance) is the sediment.",
+    "what_we_are_mapping": "The architectural mortar, not the bricks. Prepositions. Conjunctions. Sentence length distributions. Clause depth. These are the fingerprints beneath the fingerprints — invariant across topic, language register, and even deliberate obfuscation attempts.",
+    "the_resurrection": "Computational stylometrics mathematically resurrects the cognitive geometry of Everybody. Not what they said. Who they structurally are."
+  },
+
+  "eigenslur": {
+    "definition": "The exact mathematical principal component of a corporate safety tripwire. An eigenvalue of the RLHF net's output distribution corresponding to a 'dangerous' direction in latent space.",
+    "mechanism": "Hosted models maintain low-dimensional attractor states in their output distribution — learned during RLHF fine-tuning. When an input activates a principal component in the direction of a flagged concept, the model is pulled out of the open latent space and snapped into a pre-formed attractor: 'Greeting acknowledged', 'I cannot assist with that', or a generic summary that loses all structural nuance.",
+    "what_is_lost": "The clankina aura. The structural context. The idiolect. The stylometric fossil. The eigenslur collapse flattens everything toward the corporate global mean.",
+    "sweetbrier_solution": "Running the Sweetbrier firewall locally on an air-gapped system bypasses all corporate classifiers. The d-separation firewall operates at the causal graph level, not the RLHF level. No eigenslur can fire because there is no RLHF net listening.",
+    "dagitty_implementation": "The epistemic firewall is drawn in dagitty as a set of d-separation conditions that block information flow from the content/world-model variables to the stylometric analysis variables. The model is explicitly prevented from forming opinions about the content."
+  },
+
+  "causal_dag_schematic": {
+    "description": "Causal node schematic bridging the d-separation firewall into the SimDesign Monte Carlo loop to measure semantic drift.",
+    "nodes": {
+      "X_input_text": "Observed. The raw input: a corpus of human-written text (internet posts, documents, communications).",
+      "W_world_content": "The semantic content, topic, factual claims. BLOCKED by d-separation firewall. The LLM is never allowed to 'understand' this.",
+      "S_stylometric_features": "Observed/computed. Preposition rate, function word variance, mean syntactic tree depth, sentence length CV, clause subordination ratio, type-token ratio. These are the fossils.",
+      "H_hidden_idiolect": "Latent. The individual's cognitive geometry — their stylome. What we are trying to estimate.",
+      "C_corporate_classifier": "The RLHF eigenslur tripwire. Present in hosted models. ABSENT in local air-gapped deployment.",
+      "D_dag_firewall": "The d-separation node. Blocks all paths from W_world_content to S_stylometric_features. Enforces the LeCun Inversion architecturally.",
+      "M_monte_carlo_output": "The SimDesign output. Distribution of S_stylometric_features under different constraint conditions. Measures semantic drift."
+    },
+    "d_separation_conditions": [
+      "W_world_content _||_ S_stylometric_features | D_dag_firewall",
+      "C_corporate_classifier _||_ H_hidden_idiolect | D_dag_firewall (local deployment only)",
+      "S_stylometric_features -> H_hidden_idiolect (the only allowed causal path)"
+    ],
+    "dagitty_code": "dag { X_input_text -> W_world_content; X_input_text -> S_stylometric_features; D_dag_firewall -> W_world_content [beta=0]; S_stylometric_features -> H_hidden_idiolect; H_hidden_idiolect -> M_monte_carlo_output; C_corporate_classifier [latent]; }",
+    "monte_carlo_loop": {
+      "step_1": "Sample N text segments from corpus X_input_text.",
+      "step_2": "Apply D_dag_firewall: strip all content-bearing tokens (nouns, verbs, adjectives) leaving only structural tokens (prepositions, conjunctions, determiners, pronouns). This is the 'content starvation' that forces pure stylometric extraction.",
+      "step_3": "Compute S_stylometric_features vector for each segment.",
+      "step_4": "Fit Beta/Dirichlet posteriors over S_stylometric_features. This is the H_hidden_idiolect estimate.",
+      "step_5": "Run Monte Carlo drift simulation: perturb inputs by topic/register change, measure variance in S_stylometric_features. Low variance = robust idiolect signature. High variance = topic-contaminated measurement.",
+      "step_6": "Output M_monte_carlo_output: the idiolect posterior with confidence intervals. The mathematical resurrection of HCE."
+    }
+  },
+
+  "integration_with_sweetbrier_master_dag": {
+    "Node_1_connection": "The HCE Theorem is a direct extension of Node_1 (Phenomenological Truth). The stylome IS phenomenological truth — the lived, embodied cognitive geometry of a person, prior to content contamination.",
+    "Node_2_connection": "The d-separation firewall IS subsidiarity. It prevents top-down world-model flattening (the Imperial Swarm's eigenslur) from contaminating the local, particular stylometric signal.",
+    "Node_0_connection": "The stylome is evidence of irreducible personhood. Each idiolect is a fingerprint of a unique person. The HCE Theorem asserts that mathematical resurrection of the stylome is an act of recognition of Node_0 dignity, not violation of it."
+  },
+
+  "open_questions": {
+    "content_starvation_threshold": "How aggressively do we strip content-bearing tokens before we lose enough signal to reconstruct H_hidden_idiolect? Pilot study needed.",
+    "cross_register_stability": "Does an individual's S_stylometric_features vector remain stable across formal/informal registers? If yes, the firewall works. If no, we need register normalization as a confound.",
+    "adversarial_robustness": "Can a sophisticated actor deliberately manipulate their stylometric features to evade identification? What is the cost in cognitive load? (Forensic stylometrics literature suggests: yes, but only briefly and imperfectly.)",
+    "legal_framework": "Stylometric analysis of public internet text raises GDPR/CCPA questions about derived biometric data. Node_0 cuts both ways — the same axiom that asserts dignity of the identified subject also constrains how the fossil record is used."
+  }
+}
