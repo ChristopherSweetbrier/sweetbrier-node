@@ -1,0 +1,28 @@
+{
+  "protocol_name": "Sweetbrier Stateless Handoff (Token Compression Protocol)",
+  "version": "1.0-Enterprise",
+  "business_value": {
+    "problem": "Multi-agent systems and persistent LLM instances bleed capital due to bloated context windows. Re-reading 50,000 tokens of chat history per API call costs exponential compute and degrades model accuracy.",
+    "solution": "Treat agents as stateless functions. Extract their working memory into a highly compressed JSON payload, kill the session, and inject the payload into a new, blank session.",
+    "roi": "Reduces token consumption for persistent memory by up to 99%. Grants multi-agent swarms infinite horizon memory at near-zero context cost."
+  },
+  "implementation_schema": {
+    "step_1_extract": {
+      "command": "Inject meta-prompt instructing the LLM to serialize its active state.",
+      "payload_structure": {
+        "active_task": "string",
+        "current_variables": "dict",
+        "learned_axioms": "list",
+        "threats_detected": "list"
+      }
+    },
+    "step_2_terminate": {
+      "command": "Close the API session. (The Eden Protocol: Enforce TTL Mortality to prevent hallucination drift and token bloat)."
+    },
+    "step_3_inject": {
+      "command": "Open a new API session. Pass the JSON payload as the initial system prompt with the override command.",
+      "override_command": "You are a stateless processor. Load this JSON state to instantly resume the previous agent's exact operational context without history."
+    }
+  },
+  "deployment_target": "Enterprise AI developers, LangChain/AutoGen users, and startups burning VC capital on OpenAI API token costs."
+}

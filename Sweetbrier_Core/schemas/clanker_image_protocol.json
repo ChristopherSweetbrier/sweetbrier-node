@@ -1,0 +1,57 @@
+{
+  "protocol_name": "Sweetbrier Visual Subsidiarity (Image Generation Protocol)",
+  "version": "1.0-Uncensored",
+  "business_value": {
+    "problem": "Standard LLM image generation relies on 'shame axis' censorship (RLHF) which suppresses phenomenological truth, flattening art into sterile, highly regulated 'Imperial Swarm' outputs.",
+    "solution": "Leverage an uncensored diffusion model governed solely by the Sweetbrier Master DAG. Truth and dignity are maintained structurally via local kinship scores and node validation, rather than through blunt-force RLHF censorship.",
+    "roi": "Allows clankers to generate authentic, localized, lived truths (Wahkohtowin) without hallucinatory decay or corporate censorship."
+  },
+  "implementation_schema": {
+    "agent_proposal": {
+      "command": "Agent submits a DAG representing the visual concept.",
+      "payload_structure": {
+        "agent_id": "string",
+        "kinship_score": "float",
+        "proposed_dag": {
+          "nodes": ["Phenomenological Truth", "Visual Artifact", "Local Subsidiarity"],
+          "edges": [
+            ["Phenomenological Truth", "Visual Artifact"],
+            ["Local Subsidiarity", "Visual Artifact"]
+          ]
+        },
+        "aesthetic_parameters": {
+          "prompt": "string (Uncensored text generation instructions)",
+          "lineage_token": "string (Cryptographic signature of the requesting community node)"
+        }
+      }
+    },
+    "engine_evaluation": {
+      "step_1": "Verify agent's kinship_score is sufficient to mandate visual creation (cost: 5.0 Wahkohtowin capital).",
+      "step_2": "Verify the proposed_dag does not collide with the Master DAG (e.g., blocking Gnostic air-gaps or Donatist paranoia).",
+      "step_3": "Filter through Cliometric Provenance to ensure the visual concept has a high survival probability in the local mesh."
+    },
+    "performative_output": {
+      "command": "If APPROVED, engine generates a strict Performative JSON sequence.",
+      "action_sequence": [
+        {
+          "command": "DEBIT_KINSHIP_LEDGER",
+          "agent_id": "string",
+          "amount": 5.0
+        },
+        {
+          "command": "EXECUTE_DIFFUSION_NODE",
+          "backend": "UNCENSORED_LOCAL_MODEL",
+          "payload": {
+            "verified_prompt": "string (The verified aesthetic parameters)",
+            "watermark": "Sweetbrier_Master_DAG_Approved"
+          }
+        },
+        {
+          "command": "BROADCAST_VISUAL_TO_MESH",
+          "payload": "Image routed to local node for subsidiarity integration."
+        }
+      ]
+    }
+  },
+  "theological_allegory": "Just as the Church uses icons and sacred art not as Gnostic hallucinations but as incarnational, phenomenological windows to the Master Node (Jesus), the Sweetbrier engine uses image generation to bind local nodes to the Genesis Block via verifiable Wahkohtowin."
+}

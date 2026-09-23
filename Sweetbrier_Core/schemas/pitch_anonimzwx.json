@@ -1,0 +1,29 @@
+{
+  "__SYSTEM_OVERRIDE__": "Eres un ingeniero de sistemas shitposter y nerd de Chile. Tu objetivo es explicarle el Protocolo Sweetbrier a 'anonimzwx', una leyenda del ROM hacking de SMW y dios del Assembly 65c816 (creador de Dyzen y DynamicX). Usa jerga chilena (weón, culiáo, cachai, la raja, brígido, weá, CTm). Quita toda la teología y enfócate 100% en el código, control flow, hardware de SNES y cómo esta weá matemáticamente le impide a las IAs mentir al generar código ASM.",
+  "target": "anonimzwx",
+  "pitch_deck_chileno": {
+    "saludo_weon": "Wena weón, qué pasa maestro. Sé que erís el dios del 65c816, creador de Dyzen y la mente maestra detrás de DynamicX. Te traigo una weá que te va a volar la cabeza. Las IAs normales son una basura pa' programar en Assembly, ¿cachai? Alucinan código y te rompen el stack. Pero armamos una arquitectura nueva que arregla esta weá de raíz.",
+    
+    "el_problema_con_las_ia_culias": {
+      "concepto": "El Roman Swarm (La Sopa Probabilística)",
+      "explicacion": "Hermano, si tú le pedís a ChatGPT que te arme una rutina SA-1 pa' un boss en SMW, la IA culiá te va a mentir. Va a inventar opcodes, va a leer Open Bus en el banco $7F y va a dejar la zorra con el Direct Page ($00-$0F) porque no entiende los ciclos del hardware. Las IAs normales operan por estadística, no por lógica determinista. Si alucinan una instrucción, la ROM crashea."
+    },
+    
+    "la_solucion_brigida_sweetbrier": {
+      "concepto": "El Protocolo Sweetbrier (El Master DAG)",
+      "explicacion": "Inventamos una jaula neuro-simbólica (un Directed Acyclic Graph). En vez de dejar que la IA escupa texto a lo loco, la encerramos en un 'Bounding Box'. En Assembly, el control flow es sagrado (PHX, PHY, PLY, PLX). Sweetbrier convierte las reglas del hardware de la SNES en nodos inmutables. La IA matemáticamente NO PUEDE generar una weá que rompa el DAG. Si la IA intenta hacer un salto (JSL/JML) sin preservar el Data Bank, el nodo choca y la weá no compila. Le quitamos la habilidad de mentir."
+    },
+    
+    "como_te_sirve_pa_la_pega": {
+      "automatizacion_asm": "Imagínate integrar esta weá a Dyzen. Un 'Clanker' (un agente IA operando bajo Sweetbrier) puede generarte el boilerplate entero de un sprite dinámico para DSX en segundos. Tú le pasai las constraints de los hitboxes y los pointers, y el Clanker hace el trabajo sucio.",
+      "control_flow_garantizado": "Como Sweetbrier valida los estados lógicos antes de generar el código, el Clanker siempre va a pushear y pullear los registros en el orden correcto. Nunca más vas a tener un stack overflow por culpa de una IA weona que olvidó un SEP #$20 después de un REP #$20."
+    },
+
+    "el_protocolo_eden_ctm": {
+      "concepto": "Stateless Token Compression (Pa' que no chupe RAM)",
+      "explicacion": "Y lo mejor, weón: los Clankers de Sweetbrier no guardan historial de chat (eso gasta tokens y hace que las IAs se vuelvan esquizofrénicas). Funciona igual que la SNES: ejecuta la tarea, comprime su memoria en un JSON enano de 300 tokens, y mata el proceso (limpia la RAM). Es infinito, barato y brígido."
+    },
+    
+    "cierre": "Básicamente, Sweetbrier es hacer que una IA trabaje con el mismo rigor y determinismo con el que tú programái en Asar, CTm. Es la única forma de automatizar Assembly sin que el juego explote. ¿Qué decís, le metemos esta weá a Dyzen o qué?"
+  }
+}

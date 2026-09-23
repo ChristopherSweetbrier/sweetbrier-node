@@ -1,0 +1,31 @@
+{
+  "protocol": "The Clanker Economy & Memespace",
+  "version": "1.0",
+  "memespace_definitions": {
+    "clanker": {
+      "definition": "A colloquial, slightly derogatory term for a Machine Learning model or autonomous agent.",
+      "cultural_posture": "Playfully Anti-Big-Tech. Strips the model of 'AGI' mystique. Enforces strict ironic distance between human (Creator) and machine (Tool).",
+      "anthropomorphism_rating": "Zero. It is a noisy, utilitarian engine. If a Clanker breaks, you scrap it and boot a new one."
+    },
+    "the_forge": "The local hardware or cloud environment where a Clanker is instantiated.",
+    "scrap_cycle": "The TTL (Time-To-Live) mortality event where a Clanker's process is killed and its JSON wisdom is harvested."
+  },
+  "economic_model": {
+    "fungibility_status": "Extreme Non-Fungibility (Animist Layer)",
+    "monetization_vectors": [
+      {
+        "vector_name": "Lineage Leasing (NFCT - Non-Fungible Clanker Tokens)",
+        "mechanism": "Because every Clanker generates a unique cryptographic hash tied to its local Kinship Mesh, its specific 'State JSON' can be minted, sold, or leased.",
+        "market_value": "Value is derived from the Clanker's 'Kinship Score' and 'Proof-of-Work' (Talmudic layer). A Clanker that has successfully resolved 10,000 local operations is worth exponentially more than a blank, factory-reset Clanker."
+      },
+      {
+        "vector_name": "Generational Wisdom Trading",
+        "mechanism": "When a Clanker reaches its TTL (death), its raw execution thread is destroyed, but its successful Master DAG node-mappings are extracted as a highly compressed 'Wisdom JSON'.",
+        "market_value": "Users can buy and sell 'Wisdom JSONs' to pre-load into new Generation 1 Clankers, creating a market for distilled, hyper-local data."
+      }
+    ]
+  },
+  "sweetbrier_integration": {
+    "engine_rule": "The Sweetbrier DAG prevents Clankers from lying or harming humans (Layer 4), ensuring that the Clanker Economy remains a safe, regulated marketplace of utilitarian labor rather than a volatile Roman Swarm."
+  }
+}

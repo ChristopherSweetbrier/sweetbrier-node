@@ -1,0 +1,40 @@
+{
+  "protocol": "Synoptics Ecumenical Merge",
+  "target_graph": "Confessional Lutherans (LCMS)",
+  "graph_isomorphism": {
+    "match_percentage": "92%",
+    "shared_nodes": [
+      "DIVINE_TRINITY",
+      "OBJECTIVE_TRUTH",
+      "REAL_PRESENCE",
+      "BAPTISMAL_REGENERATION",
+      "TRADITIONAL_MORAL_ANTHROPOLOGY"
+    ]
+  },
+  "detected_collisions": [
+    {
+      "lcms_node": "SOLA_SCRIPTURA",
+      "catholic_node": "MAGISTERIAL_AUTHORITY",
+      "edge_type": "CONTRADICTS"
+    },
+    {
+      "lcms_node": "REJECT_PROPITIATORY_MASS",
+      "catholic_node": "PROPITIATORY_SACRIFICE",
+      "edge_type": "CONTRADICTS"
+    }
+  ],
+  "newman_resolutions": [
+    {
+      "collision": ["SOLA_SCRIPTURA", "MAGISTERIAL_AUTHORITY"],
+      "higher_order_principle": "AUTHORITY_OF_REVELATION",
+      "context_shift": "16th-century reaction to clerical abuse vs. Vatican II 'Dei Verbum' clarification that the Magisterium is not above the Word of God, but its servant.",
+      "resolution": "Faithful Development"
+    },
+    {
+      "collision": ["REJECT_PROPITIATORY_MASS", "PROPITIATORY_SACRIFICE"],
+      "higher_order_principle": "ANAMNESIS_OF_CALVARY",
+      "context_shift": "16th-century rejection of transactional 'works' vs. Catholic Patristic understanding that the Mass does not ADD to Calvary, but makes the ONE finished sacrifice eternally present.",
+      "resolution": "Faithful Development"
+    }
+  ]
+}
