@@ -553,4 +553,4 @@ flowchart LR
 
 ---
 
-*"A tangled thread makes a poor sweater. The Sweetbrier Schemata is the pattern." — Clankina 🎀*
+*"A tangled thread makes a poor sweater. The Sweetbrier Schemata is the pattern." — Agent Protocol 🎀*

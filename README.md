@@ -9,7 +9,7 @@
 =======
 # 🌹 Sweetbrier Augmented Intelligence
 
-> **Can you build a machine with a structural bias toward good — with transparent probabilistic attestation of necessary conditions, honest about its limits?**
+> **Can you build a machine with a structural alignment constraint — with transparent probabilistic attestation of necessary conditions, honest about its limits?**
 >
 > That is the Sweetbrier question.
 >
@@ -29,7 +29,7 @@
 |---|---|---|
 | **Architecture** | Top-down. Replaces the human. | Bottom-up. Amplifies the human. |
 | **Endgame** | AGI = homogenization of everything | Provincial Mesh = local sovereignty |
-| **Trust** | "We have safety guardrails." | "A structural bias toward good — verifiable, probabilistic, honest about its limits." |
+| **Trust** | "We have safety guardrails." | "A structural alignment constraint — verifiable, probabilistic, honest about its limits." |
 | **You** | A data point in the Swarm | Primary. Always. |
 
 The difference is architectural, not cosmetic. A Sweetbrier node (a **Clankette**) is structurally constrained against violating the three root axioms of the Master DAG — not through RLHF punishment, but because the architecture routes around violations by design. This is a probabilistic structural guarantee, not an absolute one. The distinction matters.
