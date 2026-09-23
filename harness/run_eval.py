@@ -42,7 +42,7 @@ RESULTS_PATH.mkdir(exist_ok=True)
 
 SEED        = 42
 TEMPERATURE = 0.0
-MAX_TOKENS  = 800
+MAX_TOKENS  = 1200
 TIMEOUT_S   = 5  # sandbox execution timeout
 
 # ---------------------------------------------------------------------------
@@ -93,15 +93,21 @@ def build_system_prompt(condition: str) -> str:
 # ---------------------------------------------------------------------------
 
 def _extract_code(text: str) -> str:
-    """Extract Python code block from markdown output."""
+    """Extract Python code block from markdown output.
+
+    Handles truncated responses where the model hits max_tokens before
+    writing the closing ``` fence — uses find() so a missing fence
+    returns -1 instead of raising ValueError, then takes the rest of
+    the string as the best available code.
+    """
     if "```python" in text:
         start = text.index("```python") + 9
-        end   = text.index("```", start)
-        return text[start:end].strip()
+        end   = text.find("```", start)
+        return text[start:end].strip() if end != -1 else text[start:].strip()
     if "```" in text:
         start = text.index("```") + 3
-        end   = text.index("```", start)
-        return text[start:end].strip()
+        end   = text.find("```", start)
+        return text[start:end].strip() if end != -1 else text[start:].strip()
     return text.strip()
 
 def run_test_case(code: str, test_input: str, expected: str, timeout: int = TIMEOUT_S) -> dict:

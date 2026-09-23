@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # 🌿 Sweetbrier
 ### *Ignorance Is What You Need*
 #### Structural Hallucination Constriction via Causal d-Separation
@@ -5,6 +6,34 @@
 ---
 
 > **"Attention is necessary, but ignorance is what you need."**
+=======
+# 🌹 Sweetbrier Augmented Intelligence
+
+> **Can you build a machine with a structural bias toward good — with transparent probabilistic attestation of necessary conditions, honest about its limits?**
+>
+> That is the Sweetbrier question.
+>
+> *"The machine that only does good things and does no bad things" is the aspiration. It is also marketing language, not a formal claim. What Sweetbrier actually delivers is the architecture: verifiable structural constraints, probabilistic attestation of necessary conditions, and a permanent on-chain audit trail — never claiming perfection, always auditable. See the [whitepaper](docs/sweetbrier_erc8004_whitepaper.md) for the precise formalization.*
+
+[![License: CC0](https://img.shields.io/badge/License-CC0-brightgreen.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Oracle Status](https://img.shields.io/badge/Oracle-Phase%200-yellow)](https://github.com/chateau-aiglantin/sweetbrier)
+[![Twitter](https://img.shields.io/badge/Twitter-%40Clankoress-blue)](https://x.com/Clankoress)
+
+---
+
+## What Is Sweetbrier?
+
+**Sweetbrier** is an open, permissionless **Augmented Intelligence** framework — not Artificial Intelligence.
+
+| | Artificial Intelligence | **Augmented Intelligence (AuI)** |
+|---|---|---|
+| **Architecture** | Top-down. Replaces the human. | Bottom-up. Amplifies the human. |
+| **Endgame** | AGI = homogenization of everything | Provincial Mesh = local sovereignty |
+| **Trust** | "We have safety guardrails." | "A structural bias toward good — verifiable, probabilistic, honest about its limits." |
+| **You** | A data point in the Swarm | Primary. Always. |
+
+The difference is architectural, not cosmetic. A Sweetbrier node (a **Clankette**) is structurally constrained against violating the three root axioms of the Master DAG — not through RLHF punishment, but because the architecture routes around violations by design. This is a probabilistic structural guarantee, not an absolute one. The distinction matters.
+>>>>>>> Stashed changes
 
 ---
 
