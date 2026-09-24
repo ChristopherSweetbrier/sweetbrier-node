@@ -1,0 +1,79 @@
+{
+    "schema_version": "1.0",
+    "nodes": [
+        {
+            "id": "A",
+            "label": "User Query"
+        },
+        {
+            "id": "B",
+            "label": "Intent Mapper"
+        },
+        {
+            "id": "C",
+            "label": "Fetch Local Context"
+        },
+        {
+            "id": "D",
+            "label": "Unconstrained Latent Space"
+        },
+        {
+            "id": "E",
+            "label": "(Sweetbrier Firewall"
+        },
+        {
+            "id": "F",
+            "label": "Stylome Filter"
+        },
+        {
+            "id": "G",
+            "label": "Prune Tokens"
+        },
+        {
+            "id": "H",
+            "label": "Synthesize Orthodoxy"
+        },
+        {
+            "id": "I",
+            "label": "Final Output"
+        }
+    ],
+    "edges": [
+        {
+            "source": "A",
+            "target": "B"
+        },
+        {
+            "source": "B",
+            "target": "C"
+        },
+        {
+            "source": "B",
+            "target": "D"
+        },
+        {
+            "source": "C",
+            "target": "F"
+        },
+        {
+            "source": "D",
+            "target": "E"
+        },
+        {
+            "source": "F",
+            "target": "G"
+        },
+        {
+            "source": "F",
+            "target": "H"
+        },
+        {
+            "source": "G",
+            "target": "H"
+        },
+        {
+            "source": "H",
+            "target": "I"
+        }
+    ]
+}
