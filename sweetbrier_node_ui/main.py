@@ -279,9 +279,13 @@ def start():
             time.sleep(1.5)
             webbrowser.open(f"http://127.0.0.1:{port}")
         threading.Thread(target=open_browser, daemon=True).start()
-        if port != 8000:
-            print(f"[*] Port 8000 in use — binding to :{port} instead.")
-        uvicorn.run(app, host="127.0.0.1", port=port)
+        print(f"\n=======================================================")
+        print(f"[*] SWEETBRIER SOVEREIGN NODE ONLINE")
+        print(f"[*] Laptop / Desktop URL : http://localhost:{port}")
+        print(f"[*] Mobile Phone URL     : http://192.168.2.132:{port}")
+        print(f"    (Open the Mobile URL on any phone connected to this Wi-Fi!)")
+        print(f"=======================================================\n")
+        uvicorn.run(app, host="0.0.0.0", port=port)
 
 if __name__ == "__main__":
     start()

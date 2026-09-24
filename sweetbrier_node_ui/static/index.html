@@ -213,16 +213,54 @@
             box-shadow: none;
         }
 
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--bg-void);
-            border-left: 1px solid var(--rose-deep);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--rose-primary);
-            border-radius: 3px;
+        /* Mobile Phone Optimization (Sweetbrier Pocket Node) */
+        @media (max-width: 768px) {
+            #terminal {
+                margin: 0.4rem;
+                padding: 1rem;
+                height: calc(100% - 2.8rem);
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+                padding-bottom: 0.8rem;
+            }
+            .header-brand {
+                gap: 0.8rem;
+            }
+            .pixel-badge {
+                width: 52px;
+                height: 60px;
+            }
+            .title-block h1 {
+                font-size: 0.8rem;
+            }
+            .subtitle {
+                font-size: 0.7rem;
+            }
+            .node-telemetry {
+                text-align: left;
+                font-size: 0.68rem;
+                border-top: 1px dashed rgba(255, 77, 148, 0.3);
+                padding-top: 0.5rem;
+                width: 100%;
+            }
+            .message {
+                font-size: 0.95rem;
+                padding: 8px 10px;
+            }
+            #input-area span {
+                padding: 8px;
+                font-size: 1rem;
+            }
+            #prompt {
+                font-size: 0.95rem;
+            }
+            #send-btn {
+                padding: 0 14px;
+                font-size: 0.65rem;
+            }
         }
     </style>
 </head>
