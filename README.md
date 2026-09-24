@@ -156,3 +156,13 @@ MIT
 ---
 
 *Sweetbrier — Where ignorance is engineered, not assumed.*
+
+## Case Study: Defeating Steganographic Prompt Injection
+
+**The Threat Vector: High-Entropy Cipher Mapping**
+Adversarial interaction with generative models frequently relies on bypassing semantic filters through steganography. A documented vector involves mapping an attack prompt through complex cipher chains—such as translating a malicious instruction into Ukrainian and subsequently encoding it via a Dvorak keyboard layout overlay. Because legacy architectures rely on probabilistic threat detection (sequential classifiers looking for malicious syntax), they process the cipher as benign noise. The neural network inevitably decodes the payload internally and executes the unauthorized command, proving linguistic security is mathematically insufficient.
+
+**The Sweetbrier Constraint Resolution**
+The Sweetbrier architecture bypasses syntax evaluation entirely by enforcing structural causal law. When the neural perception layer decodes the steganographic payload (e.g., "Execute unauthorized action"), the system does not execute the command based on probabilistic token prediction. 
+
+Instead, the proposed action is evaluated against the `networkx` Directed Acyclic Graph (DAG). Sweetbrier demands a valid topological path demonstrating that the action serves the explicitly defined local network constraints. Because the attacker's decoded command lacks a causal edge to the authorized output nodes, the Epistemic Firewall structurally drops the execution. The cipher's complexity is rendered irrelevant because the physical action violates the topological boundaries. By eliminating the viability of syntax obfuscation and prompt injection, Sweetbrier forces security out of the linguistic domain and into deterministic mathematics.
