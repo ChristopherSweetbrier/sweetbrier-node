@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWEETBRIER :: SOVEREIGN AUGMENTED INTELLIGENCE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+
+        :root {
+            --rose-primary: #ff4d94;     /* Vibrant Prairie Sweetbrier Pink */
+            --rose-glow: #ff80bf;        /* Petal Highlight Glow */
+            --rose-deep: #b3004b;        /* Stem Deep Magenta */
+            --foliage-green: #38b000;    /* Southern Trad Leaf Green */
+            --bg-void: #09030a;          /* Night Garden Obsidian */
+            --card-bg: rgba(18, 6, 20, 0.88);
+            --border-glow: #ff4d94;
+            --accent-cyan: #00f0ff;      /* Retro Techno-Optimist Cyan */
+            --font-pixel: 'Press Start 2P', monospace;
+            --font-mono: 'Share Tech Mono', 'Courier New', monospace;
+        }
+
+        body, html {
+            margin: 0; padding: 0; height: 100%;
+            background-color: var(--bg-void);
+            color: #ffffff;
+            font-family: var(--font-mono);
+            overflow: hidden;
+            text-shadow: 0 0 4px rgba(255, 77, 148, 0.4);
+        }
+
+        /* Subtle Retro Pixel CRT Scanlines */
+        .scanlines {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(
+                rgba(18, 6, 20, 0) 50%, 
+                rgba(0, 0, 0, 0.35) 50%), 
+                linear-gradient(90deg, 
+                rgba(255, 77, 148, 0.03), 
+                rgba(0, 240, 255, 0.02), 
+                rgba(56, 176, 0, 0.03));
+            background-size: 100% 4px, 4px 100%;
+            z-index: 100;
+            pointer-events: none;
+            opacity: 0.75;
+        }
+
+        .vignette {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: radial-gradient(circle, transparent 50%, #000000 120%);
+            z-index: 99;
+            pointer-events: none;
+        }
+
+        #terminal {
+            position: relative;
+            z-index: 10;
+            padding: 1.5rem 2rem 2rem 2rem;
+            height: calc(100% - 4.5rem);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid var(--rose-primary);
+            margin: 1rem;
+            background: var(--card-bg);
+            box-shadow: inset 0 0 25px rgba(255, 77, 148, 0.2), 0 0 20px rgba(255, 77, 148, 0.35);
+            border-radius: 8px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid var(--rose-deep);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .pixel-badge {
+            width: 72px;
+            height: 84px;
+            object-fit: cover;
+            border: 2px solid var(--rose-primary);
+            border-radius: 4px;
+            box-shadow: 0 0 10px var(--rose-primary);
+            image-rendering: pixelated;
+        }
+
+        .title-block h1 {
+            font-family: var(--font-pixel);
+            font-size: 1.15rem;
+            margin: 0;
+            color: var(--rose-primary);
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px var(--rose-glow);
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            margin-top: 6px;
+            letter-spacing: 1px;
+        }
+
+        .node-telemetry {
+            text-align: right;
+            font-size: 0.75rem;
+            color: #ff99cc;
+            line-height: 1.4;
+        }
+
+        .node-telemetry .status-indicator {
+            color: var(--foliage-green);
+            font-weight: bold;
+        }
+
+        #chat {
+            flex-grow: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding-right: 12px;
+        }
+
+        .message {
+            padding: 10px 14px;
+            border-radius: 4px;
+            word-wrap: break-word;
+            line-height: 1.45;
+            font-size: 1.05rem;
+        }
+
+        .user-msg {
+            color: #ffffff;
+            text-align: left;
+            border-left: 3px solid var(--accent-cyan);
+            background: rgba(0, 240, 255, 0.08);
+        }
+
+        .bot-msg {
+            color: #ffdded;
+            text-align: left;
+            border-left: 3px solid var(--rose-primary);
+            background: rgba(255, 77, 148, 0.07);
+        }
+
+        .system-banner {
+            font-size: 0.85rem;
+            color: #a8799c;
+            font-style: italic;
+            border-left: 2px dashed var(--rose-deep);
+            padding: 6px 12px;
+        }
+
+        #input-area {
+            display: flex;
+            margin-top: 1rem;
+            border: 1px solid var(--rose-deep);
+            background: rgba(10, 2, 12, 0.95);
+            border-radius: 4px;
+            box-shadow: 0 0 8px rgba(255, 77, 148, 0.15);
+        }
+
+        #input-area span {
+            color: var(--rose-primary);
+            padding: 10px 12px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: var(--font-pixel);
+        }
+
+        #prompt {
+            flex-grow: 1;
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            font-family: var(--font-mono);
+            font-size: 1.05rem;
+            padding: 10px 0;
+            outline: none;
+        }
+
+        #send-btn {
+            background: var(--rose-deep);
+            color: #ffffff;
+            border: none;
+            padding: 0 24px;
+            font-family: var(--font-pixel);
+            font-size: 0.75rem;
+            cursor: pointer;
+            text-shadow: none;
+            transition: all 0.2s ease;
+        }
+
+        #send-btn:hover {
+            background: var(--rose-primary);
+            color: #000000;
+            box-shadow: 0 0 12px var(--rose-glow);
+        }
+
+        #send-btn:disabled {
+            background: #2a1120;
+            color: #664455;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-void);
+            border-left: 1px solid var(--rose-deep);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--rose-primary);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    
+    <div id="terminal">
+        <div class="header">
+            <div class="header-brand">
+                <img src="/static/sweetbrier_logo.jpg" alt="Sweetbrier Augmented Intelligence" class="pixel-badge" onerror="this.style.display='none'">
+                <div class="title-block">
+                    <h1>SWEETBRIER :: SOVEREIGN NODE</h1>
+                    <div class="subtitle">AUGMENTED INTELLIGENCE // EST. 2026</div>
+                </div>
+            </div>
+            <div class="node-telemetry">
+                <div>SYSTEM: <span class="status-indicator">GOOD RELATIONS [ACTIVE]</span></div>
+                <div>SUBSTRATE: OLLAMA / HERMES 3 (8B)</div>
+                <div>LOCAL ANCHOR: RED RIVER VALLEY</div>
+            </div>
+        </div>
+        
+        <div id="chat">
+            <div class="system-banner">[*] Sweetbrier Sovereign Node active. Anchored to local context and Good Relations.</div>
+        </div>
+        
+        <div id="input-area">
+            <span>></span>
+            <input type="text" id="prompt" placeholder="Say hello to Clankina..." autocomplete="off" autofocus>
+            <button id="send-btn">TRANSMIT</button>
+        </div>
+    </div>
+
+    <script>
+        const chat = document.getElementById('chat');
+        const promptInput = document.getElementById('prompt');
+        const sendBtn = document.getElementById('send-btn');
+
+        function addMessage(text, isUser) {
+            const msg = document.createElement('div');
+            msg.className = 'message ' + (isUser ? 'user-msg' : 'bot-msg');
+            msg.textContent = (isUser ? '[YOU] ' : '[CLANKINA] ') + text;
+            chat.appendChild(msg);
+            chat.scrollTop = chat.scrollHeight;
+        }
+
+        async function loadHistory() {
+            try {
+                const res = await fetch('/api/history');
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data.history && data.history.length > 0) {
+                        chat.innerHTML = '<div class="system-banner">[*] Sweetbrier Sovereign Node active. Anchored to local context and Good Relations.</div>';
+                        for (const item of data.history) {
+                            if (item.role === 'user') {
+                                addMessage(item.content, true);
+                            } else if (item.role === 'assistant') {
+                                addMessage(item.content, false);
+                            }
+                        }
+                    }
+                }
+            } catch (e) {
+                console.log("History load skipped:", e);
+            }
+        }
+
+        async function sendPrompt() {
+            const text = promptInput.value.trim();
+            if (!text) return;
+
+            addMessage(text, true);
+            promptInput.value = '';
+            promptInput.disabled = true;
+            sendBtn.disabled = true;
+
+            try {
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: text })
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    addMessage(data.response, false);
+                } else {
+                    addMessage("Communication disrupted. (Check local server log)", false);
+                }
+            } catch (err) {
+                addMessage("Node Offline: " + err.message, false);
+            } finally {
+                promptInput.disabled = false;
+                sendBtn.disabled = false;
+                promptInput.focus();
+            }
+        }
+
+        sendBtn.addEventListener('click', sendPrompt);
+        promptInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') sendPrompt();
+        });
+
+        window.addEventListener('DOMContentLoaded', loadHistory);
+    </script>
+</body>
+</html>
