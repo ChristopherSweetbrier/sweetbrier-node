@@ -26,5 +26,16 @@
     "@types/vscode": "^1.80.0",
     "@types/node": "18.x",
     "typescript": "^5.1.3"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "mermaid",
+        "extensions": [
+          ".mermaid",
+          ".mmd"
+        ]
+      }
+    ]
   }
 }
