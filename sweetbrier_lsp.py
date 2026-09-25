@@ -29,7 +29,7 @@ def validate_mermaid(ls: LanguageServer, uri: str, text: str):
     
     # Only process if it actually contains a mermaid graph
     if "graph TD" not in text and "graph LR" not in text:
-        ls.publish_diagnostics(uri, [])
+        ls.text_document_publish_diagnostics(uri, [])
         return
 
     try:
@@ -67,7 +67,7 @@ def validate_mermaid(ls: LanguageServer, uri: str, text: str):
         pass
 
     # Send the red squiggles to VS Code
-    ls.publish_diagnostics(uri, diagnostics)
+    ls.text_document_publish_diagnostics(uri, diagnostics)
 
 @server.feature(TEXT_DOCUMENT_DID_OPEN)
 def did_open(ls: LanguageServer, params: DidOpenTextDocumentParams):
