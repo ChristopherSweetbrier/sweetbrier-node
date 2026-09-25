@@ -2,6 +2,7 @@ import sys
 import re
 from pygls.server import LanguageServer
 from lsprotocol.types import (
+    PublishDiagnosticsParams,
     TEXT_DOCUMENT_DID_CHANGE,
     TEXT_DOCUMENT_DID_SAVE,
     TEXT_DOCUMENT_DID_OPEN,
@@ -67,7 +68,7 @@ def validate_mermaid(ls: LanguageServer, uri: str, text: str):
         pass
 
     # Send the red squiggles to VS Code
-    ls.text_document_publish_diagnostics(uri, diagnostics)
+    ls.text_document_publish_diagnostics(PublishDiagnosticsParams(uri=uri, diagnostics=diagnostics))
 
 @server.feature(TEXT_DOCUMENT_DID_OPEN)
 def did_open(ls: LanguageServer, params: DidOpenTextDocumentParams):
